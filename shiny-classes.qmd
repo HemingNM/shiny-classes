@@ -11,4 +11,4 @@ Na natureza, valores de ***z*** variam de 0,1 to 0,35, enquanto valores de ***c*
 
 Movimente as barras deslizantes para alterar as curvas espécie-área:
 
-<iframe height="900" width="100%" frameborder="no" src="https://heming-nm.shinyapps.io/especie-area/"> </iframe>
+<iframe height="1000" width="100%" frameborder="no" src="https://heming-nm.shinyapps.io/especie-area/"> </iframe>
