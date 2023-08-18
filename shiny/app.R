@@ -61,6 +61,7 @@ ui <- fluidPage(
     mainPanel(
       ## plot
       plotOutput("sar"),
+      tableOutput("S")
     )
   )
 )
@@ -109,6 +110,11 @@ server <- function(input, output, session) {
     lines(As()[,2], Ss()[,2], lty=3, col="red", lwd=5)
     
   })
+  
+  output$S <- renderTable({
+    s <- Ss()
+    matrix(s[nrow(s),], ncol = 2, dimnames = list("S (riqueza) esperada", c("Area 1", "Area 2")))
+  }, rownames=TRUE, digits=0)
 }
 
 # Run the application 
