@@ -1,5 +1,5 @@
 ---
-title: "classes-website"
+title: "shiny-classes"
 ---
 
 This is a Quarto website.
