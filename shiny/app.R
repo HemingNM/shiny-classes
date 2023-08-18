@@ -82,16 +82,29 @@ server <- function(input, output, session) {
   })
   
   output$sar <- renderPlot({
-    par(mfrow=c(2,1), mar=c(4, 5, 2, 5))
-    plot(As()[,1], Ss()[,1], type="l", lwd=2, 
-         xlim=range(As()), ylim=range(Ss()),
-         xlab="Area", ylab="S (riqueza)" )
-    lines(As()[,2], Ss()[,2], lty=3, col="red", lwd=5)
+    par(mar=c(3, 3, 2, 3))
     
+    # main log plot
+    par(fig = c(0,1,0,1))
     plot(log(As()[,1]), log(Ss()[,1]), type="l", lwd=2,
          xlim=range(log(As())), ylim=range(log(Ss())),
-         xlab="log(Area)", ylab="log(S)" )
+         xlab="", ylab="" )
+    title(xlab = "log(Area)", line = 2)            # Add x-axis text
+    title(ylab = "log(S)", line = 2)            # Add y-axis text
     lines(log(As()[,2]), log(Ss()[,2]), lty=3, col="red", lwd=5)
+    
+    # inset plot
+    par(fig = c(0.045,0.5, 0.61, 0.95), new = T)
+    rect(par("usr")[1], par("usr")[3],
+         par("usr")[2], par("usr")[4],
+         col = "#f7f7f7", border = "#f7f7f7") # Color
+    par(fig = c(0.075,0.5, 0.65, 0.98), new = T)
+    plot(As()[,1], Ss()[,1], type="l", lwd=2, 
+         xlim=range(As()), ylim=range(Ss()),
+         xlab="", ylab="" )
+  title(xlab = "Area", line = 2)            # Add x-axis text
+  title(ylab = "S (riqueza)", line = 2)            # Add y-axis text
+    lines(As()[,2], Ss()[,2], lty=3, col="red", lwd=5)
   })
 }
 
