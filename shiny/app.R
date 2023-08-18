@@ -40,14 +40,14 @@ ui <- fluidPage(
                 font-family:monospace;
             }"))),
   
-  # Application title
-  titlePanel("Relação espécie–área (SAR)"),
-  # https://stackoverflow.com/a/65588061
-  p("Veja como a relação espécie-área muda com a mudança no tamanho da", strong("área"),
-    "e nos valores dos parâmetros ", strong(em("z")), "e", strong(em("c."))),
-  p("Na natureza, valores de", strong(em("z")), "variam de 0,1 to 0,35, enquanto valores de",
-    strong(em("c")), "variam de 2,7 a 12,3, dependendo da diversidade do grupo
-        (insetos tem valores de", strong(em("c")), "muito maiores do que aves)."),
+  # # Application title
+  titlePanel("Species–area relationship (SAR)"),
+  # # https://stackoverflow.com/a/65588061
+  # p("Veja como a relação espécie-área muda com a mudança no tamanho da", strong("área"),
+  #   "e nos valores dos parâmetros ", strong(em("z")), "e", strong(em("c."))),
+  # p("Na natureza, valores de", strong(em("z")), "variam de 0,1 to 0,35, enquanto valores de",
+  #   strong(em("c")), "variam de 2,7 a 12,3, dependendo da diversidade do grupo
+  #       (insetos tem valores de", strong(em("c")), "muito maiores do que aves)."),
       
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
@@ -55,8 +55,8 @@ ui <- fluidPage(
       
       sliderInput("area1", "Area 1", 10, 10000, 1000),
       sliderInput("area2", "Area 2", 10, 10000, 100),
-      sliderInput("c2", "Param c", 2.7, 12.3, 7.5),
-      sliderInput("z2", "Param z", 0.14, 0.31, 0.25),
+      sliderInput("c2", "Area 2, param c", 2.7, 12.3, 7.5),
+      sliderInput("z2", "Area 2, param z", 0.14, 0.31, 0.25),
     ),
     mainPanel(
       ## plot
@@ -92,19 +92,22 @@ server <- function(input, output, session) {
     title(xlab = "log(Area)", line = 2)            # Add x-axis text
     title(ylab = "log(S)", line = 2)            # Add y-axis text
     lines(log(As()[,2]), log(Ss()[,2]), lty=3, col="red", lwd=5)
+    legend("bottomright", legend=c("Area 1", "Area 2"),
+           col=c("black", "red"), lty=1:2, lwd=c(2,4), cex=1.2)
     
     # inset plot
     par(fig = c(0.045,0.5, 0.61, 0.95), new = T)
     rect(par("usr")[1], par("usr")[3],
          par("usr")[2], par("usr")[4],
          col = "#f7f7f7", border = "#f7f7f7") # Color
-    par(fig = c(0.075,0.5, 0.65, 0.98), new = T)
+    par(fig = c(0.08,0.5, 0.65, 0.98), new = T)
     plot(As()[,1], Ss()[,1], type="l", lwd=2, 
          xlim=range(As()), ylim=range(Ss()),
          xlab="", ylab="" )
-  title(xlab = "Area", line = 2)            # Add x-axis text
-  title(ylab = "S (riqueza)", line = 2)            # Add y-axis text
+    title(xlab = "Area", line = 2)            # Add x-axis text
+    title(ylab = "S (riqueza)", line = 2)            # Add y-axis text
     lines(As()[,2], Ss()[,2], lty=3, col="red", lwd=5)
+    
   })
 }
 

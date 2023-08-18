@@ -1,9 +1,6 @@
 ---
 title: "About"
+author: "Neander M. Heming"
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+Esta página contém atividades práticas das aulas de Ecologia de Neander M. Heming.

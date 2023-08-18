@@ -1,2 +1,3 @@
-# shiny-classes
-Shiny apps for teaching
+# Ecology shiny-classes
+
+Shiny apps for teaching ecology.

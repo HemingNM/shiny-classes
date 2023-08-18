@@ -3,11 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "shiny-classes"
+  title: "Ecologia interativa"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - href: shiny-classes.qmd
+        text: Módulos interativos
       - about.qmd
 
 format:

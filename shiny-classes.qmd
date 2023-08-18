@@ -1,0 +1,14 @@
+---
+title: "Módulos interativos"
+author: "Neander M. Heming"
+---
+# Macroecologia e padrões de riqueza de espécies
+## Relação espécie--área (SAR, species--area relationship)
+
+Veja como a relação espécie-área muda com a mudança no tamanho da **área** e nos valores dos parâmetros ***z*** e ***c***.
+
+Na natureza, valores de ***z*** variam de 0,1 to 0,35, enquanto valores de ***c*** variam de 2,7 a 12,3, dependendo da diversidade do grupo (insetos tem valores de ***c*** muito maiores do que aves). Valores de ***c*** e ***z*** obtidos de <https://onlinelibrary.wiley.com/doi/10.1111/jbi.12874>
+
+Movimente as barras deslizantes para alterar as curvas espécie-área:
+
+<iframe height="900" width="100%" frameborder="no" src="https://heming-nm.shinyapps.io/especie-area/"> </iframe>

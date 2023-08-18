@@ -5,7 +5,7 @@ account: heming-nm
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9630625
-bundleId: 7584333
+bundleId: 7584933
 url: https://heming-nm.shinyapps.io/especie-area/
 version: 1
 asMultiple: FALSE

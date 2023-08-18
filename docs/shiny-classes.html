@@ -8,7 +8,7 @@
 
 <meta name="author" content="Neander M. Heming">
 
-<title>Ecologia interativa</title>
+<title>Ecologia interativa - Módulos interativos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,11 +82,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./shiny-classes.html" rel="" target="">
+    <a class="nav-link active" href="./shiny-classes.html" rel="" target="" aria-current="page">
  <span class="menu-text">Módulos interativos</span></a>
   </li>  
   <li class="nav-item">
@@ -105,14 +105,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#macroecologia-e-padrões-de-riqueza-de-espécies" id="toc-macroecologia-e-padrões-de-riqueza-de-espécies" class="nav-link active" data-scroll-target="#macroecologia-e-padrões-de-riqueza-de-espécies">Macroecologia e padrões de riqueza de espécies</a>
+  <ul class="collapse">
+  <li><a href="#relação-espécieárea-sar-speciesarea-relationship" id="toc-relação-espécieárea-sar-speciesarea-relationship" class="nav-link" data-scroll-target="#relação-espécieárea-sar-speciesarea-relationship">Relação espécie–área (SAR, species–area relationship)</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ecologia interativa</h1>
+<h1 class="title">Módulos interativos</h1>
 </div>
 
 
@@ -133,11 +142,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Este website contém shiny apps, módulos interativos programados em <code>R</code>, para visualização de conceitos de ecologia dados em aula e para a realização de atividades práticas das aulas.</p>
-<p><a href="./shiny-classes.html">Módulos interativos</a></p>
-<p>Para mais informações sobre o autor visite <a href="https://hemingnm.github.io" class="uri">https://hemingnm.github.io</a>.</p>
+<section id="macroecologia-e-padrões-de-riqueza-de-espécies" class="level1">
+<h1>Macroecologia e padrões de riqueza de espécies</h1>
+<section id="relação-espécieárea-sar-speciesarea-relationship" class="level2">
+<h2 class="anchored" data-anchor-id="relação-espécieárea-sar-speciesarea-relationship">Relação espécie–área (SAR, species–area relationship)</h2>
+<p>Veja como a relação espécie-área muda com a mudança no tamanho da <strong>área</strong> e nos valores dos parâmetros <strong><em>z</em></strong> e <strong><em>c</em></strong>.</p>
+<p>Na natureza, valores de <strong><em>z</em></strong> variam de 0,1 to 0,35, enquanto valores de <strong><em>c</em></strong> variam de 2,7 a 12,3, dependendo da diversidade do grupo (insetos tem valores de <strong><em>c</em></strong> muito maiores do que aves). Valores de <strong><em>c</em></strong> e <strong><em>z</em></strong> obtidos de <a href="https://onlinelibrary.wiley.com/doi/10.1111/jbi.12874" class="uri">https://onlinelibrary.wiley.com/doi/10.1111/jbi.12874</a></p>
+<p>Movimente as barras deslizantes para alterar as curvas espécie-área:</p>
+<iframe height="900" width="100%" frameborder="no" src="https://heming-nm.shinyapps.io/especie-area/">
+</iframe>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

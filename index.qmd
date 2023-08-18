@@ -1,13 +1,13 @@
 ---
-title: "shiny-classes"
+title: "Ecologia interativa"
+author: "Neander M. Heming"
 ---
 
-This is a Quarto website.
+Este website contém shiny apps, módulos interativos programados em `R`, para 
+visualização de conceitos de ecologia dados em aula e para a realização de atividades 
+práticas das aulas.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+[Módulos interativos](shiny-classes.qmd)
 
-```{r}
-1 + 1
-```
 
-<iframe height="1000" width="100%" frameborder="no" src="https://heming-nm.shinyapps.io/especie-area/"> </iframe>
+Para mais informações sobre o autor visite <https://hemingnm.github.io>.

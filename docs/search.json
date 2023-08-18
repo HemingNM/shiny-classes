@@ -2,15 +2,43 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "shiny-classes",
+    "title": "Ecologia interativa",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Este website contém shiny apps, módulos interativos programados em R, para visualização de conceitos de ecologia dados em aula e para a realização de atividades práticas das aulas.\nMódulos interativos\nPara mais informações sobre o autor visite https://hemingnm.github.io."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Esta página contém atividades práticas das aulas de Ecologia de Neander M. Heming."
+  },
+  {
+    "objectID": "shini-classes.html",
+    "href": "shini-classes.html",
+    "title": "Shini-classes",
+    "section": "",
+    "text": "Relação espécie–área (SAR - species–area relationship)\nVeja como a relação espécie-área muda com a mudança no tamanho da área e nos valores dos parâmetros z e c.\nNa natureza, valores de z variam de 0,1 to 0,35, enquanto valores de c variam de 2,7 a 12,3, dependendo da diversidade do grupo (insetos tem valores de c muito maiores do que aves). Valores de c e z de https://onlinelibrary.wiley.com/doi/10.1111/jbi.12874"
+  },
+  {
+    "objectID": "shiny-classes.html",
+    "href": "shiny-classes.html",
+    "title": "Módulos interativos",
+    "section": "",
+    "text": "Veja como a relação espécie-área muda com a mudança no tamanho da área e nos valores dos parâmetros z e c.\nNa natureza, valores de z variam de 0,1 to 0,35, enquanto valores de c variam de 2,7 a 12,3, dependendo da diversidade do grupo (insetos tem valores de c muito maiores do que aves). Valores de c e z obtidos de https://onlinelibrary.wiley.com/doi/10.1111/jbi.12874\nMovimente as barras deslizantes para alterar as curvas espécie-área:"
+  },
+  {
+    "objectID": "shiny-classes.html#relação-espécieárea-sar---speciesarea-relationship",
+    "href": "shiny-classes.html#relação-espécieárea-sar---speciesarea-relationship",
+    "title": "Módulos interativos",
+    "section": "",
+    "text": "Veja como a relação espécie-área muda com a mudança no tamanho da área e nos valores dos parâmetros z e c.\nNa natureza, valores de z variam de 0,1 to 0,35, enquanto valores de c variam de 2,7 a 12,3, dependendo da diversidade do grupo (insetos tem valores de c muito maiores do que aves). Valores de c e z obtidos de https://onlinelibrary.wiley.com/doi/10.1111/jbi.12874"
+  },
+  {
+    "objectID": "shiny-classes.html#relação-espécieárea-sar-speciesarea-relationship",
+    "href": "shiny-classes.html#relação-espécieárea-sar-speciesarea-relationship",
+    "title": "Módulos interativos",
+    "section": "",
+    "text": "Veja como a relação espécie-área muda com a mudança no tamanho da área e nos valores dos parâmetros z e c.\nNa natureza, valores de z variam de 0,1 to 0,35, enquanto valores de c variam de 2,7 a 12,3, dependendo da diversidade do grupo (insetos tem valores de c muito maiores do que aves). Valores de c e z obtidos de https://onlinelibrary.wiley.com/doi/10.1111/jbi.12874\nMovimente as barras deslizantes para alterar as curvas espécie-área:"
   }
 ]
